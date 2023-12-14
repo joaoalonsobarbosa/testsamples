@@ -4,4 +4,3 @@
     projectName: '$(Build.Repository.Name)'
     branchName: '$(Build.SourceBranchName)'
     tenantName: 'test_naftali'
-    additionalParams: '--scan-types sast'
