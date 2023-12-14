@@ -1,7 +1,7 @@
-task: Checkmarx AST@2
-inputs:
-  CheckmarxService: 'CxOne Connection'
-  projectName: '$(Build.Repository.Name)'
-  branchName: '$(Build.SourceBranchName)'
-  tenantName: 'test_naftali'
-  additionalParams: '--scan-types sast'
+- task: Checkmarx AST@2
+  inputs:
+    CheckmarxService: 'CxOne Connection'
+    projectName: '$(Build.Repository.Name)'
+    branchName: '$(Build.SourceBranchName)'
+    tenantName: 'test_naftali'
+    additionalParams: '--scan-types sast'
