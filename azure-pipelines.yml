@@ -24,5 +24,5 @@ steps:
     projectName: '$(Build.Repository.Name)'
     branchName: '$(Build.SourceBranchName)'
     tenantName: 'test_naftali'
-    additionalParams: '--async --sast-incremental --sast-filter "!*.cs"'
+    additionalParams: '--sast-incremental --sast-filter "!*.cs"'
   continueOnError: true
