@@ -1,4 +1,4 @@
-- task: Checkmarx AST@2
+  task: Checkmarx AST@2
   inputs:
     CheckmarxService: 'CxOne Connection'
     projectName: '$(Build.Repository.Name)'
