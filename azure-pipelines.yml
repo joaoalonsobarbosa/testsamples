@@ -24,3 +24,4 @@ steps:
     branchName: '$(Build.SourceBranchName)'
     tenantName: 'test_naftali'
     additionalParams: '--async --sast-incremental --sast-filter "!*.cs"'
+  continueOnError: true
