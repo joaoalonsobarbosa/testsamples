@@ -17,13 +17,9 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
-
 - task: Checkmarx AST@2
   inputs:
-    CheckmarxService: 'CxOne Connection'
+    CheckmarxService: 'CxOne Connection cx_seg'
     projectName: '$(Build.Repository.Name)'
     branchName: '$(Build.SourceBranchName)'
-    tenantName: 'test_naftali'
-    additionalParams: '--sast-incremental --sast-filter "!*.cs"'
-  continueOnError: true
-...
+    tenantName: 'cx_seg'
