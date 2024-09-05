@@ -26,6 +26,4 @@ steps:
     tenantName: 'test_naftali'
     additionalParams: '--sast-incremental --sast-filter "!*.cs"'
   continueOnError: true
-
-
-  
+...
