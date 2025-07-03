@@ -23,4 +23,4 @@ steps:
     projectName: '$(Build.Repository.Name)'
     branchName: '$(Build.SourceBranchName)'
     tenantName: 'cx_seg'
-    additionalParams:  --scan-types sast --file-filter "!src"
+    additionalParams:  --scan-types sast --file-filter "!src" --tags feedback-"Acceptance Criteria":New
