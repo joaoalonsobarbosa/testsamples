@@ -23,4 +23,4 @@ steps:
     projectName: '$(Build.Repository.Name)'
     branchName: '$(Build.SourceBranchName)'
     tenantName: 'cx_seg'
-    additionalParams:  --file-filter "!src"'
+    additionalParams:  --scan-type sast --file-filter "!src"
