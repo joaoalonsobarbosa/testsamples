@@ -19,7 +19,8 @@ steps:
   displayName: 'Run a multi-line script'
 - task: Checkmarx AST@2
   inputs:
-    CheckmarxService: 'cx_seg new connection'
+    CheckmarxService: 'CxOne Connection cx_seg'
     projectName: '$(Build.Repository.Name)'
     branchName: '$(Build.SourceBranchName)'
     tenantName: 'cx_seg'
+    additionalParams:  --scan-types sast
